@@ -1,6 +1,9 @@
 Welcome to your 310 Portfolio
 ===============================
 
-This portfolio will be where you collect evidence of your learning for the semester.
+A progression of learning for CSC/DSP 310: Programming for Data Science
+at University of Rhode Island. 
 
-Change this page to describe your motivation for taking the course. 
+
+About Me
+---------

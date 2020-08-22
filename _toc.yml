@@ -1,5 +1,10 @@
 - file: intro
-- file: content
-  sections:
+
+
+- part: Submission 1
+  chapters:
+    - file: submission_1_intro
     - file: markdown
     - file: notebooks
+
+# - url: https://yoururl.com

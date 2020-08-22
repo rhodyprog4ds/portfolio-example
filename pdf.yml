@@ -1,4 +1,4 @@
-name: deploy-book
+name: make-pdf-only
 
 # Only run this when the master branch changes
 on:
@@ -30,15 +30,14 @@ jobs:
         pip install -r requirements.txt
 
     # Build the book
-    - name: Build the book
+    - name: Build the pdf
       run: |
-        jupyter-book build .
         jupyter-book build . --builder pdfhtml
-        mv _build/pdf/book.pdf _build/html/coursemanual.pdf
+        mv _build/pdf/book.pdf _build/pdf/portfolio.pdf
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_build/html
+        publish_dir: ./_build/pdf
