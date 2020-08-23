@@ -7,9 +7,9 @@ _this is designed to be used by accepting an assignment on github classroom, if 
 
 ## Setup Publishing
 
-- move a Github actions `.yml` file to have github compile for you
-  - use `publish.yml` to generate html and pdf and post them on the `gh-pages` branch
-  - use `pdf.yml` to generate only the pdf on the `gh-pages` branch
+- set up a GitHub Actions for publishing by merging a branch to add a `.yml` file to the `.github/workflows/` folder. To make your html site publicly visible see the Settings tab and set the `gh-pages` branch and `root` to the source. 
+  - merge `publish_html` to generate html and pdf and post them on the `gh-pages` branch.
+  - merg `publish_pdf` to generate only the pdf on the `gh-pages` branch
 - follow the [Jupyter Book Setup Instructions](https://jupyterbook.org/start/overview.html) in order to build offline
 - follow the [Jupyter Book PDF Instructions](https://jupyterbook.org/advanced/pdf.html) in order to build to pdf offline
 
