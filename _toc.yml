@@ -1,10 +1,10 @@
 - file: intro
 
 
-- part: Submission 1
-  chapters:
-    - file: submission_1_intro
-    - file: markdown
-    - file: notebooks
+# - part: Submission 1
+#   chapters:
+#     - file: submission_1_intro
+#     - file: markdown
+#     - file: notebooks
 
 # - url: https://yoururl.com
