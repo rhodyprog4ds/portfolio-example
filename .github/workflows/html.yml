@@ -29,20 +29,20 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    # Build the book
-    - name: Build the book as html
-      run: |
-        jupyter-book build .
-
     # compile the pdf
-    - name: Build the pdf
+    - name: Build a basic html to pdf
       run: |
         jupyter-book build . --builder pdfhtml
 
     # rename the pdf
-    - name: Build the pdf
+    - name: Move the pdf
       run: |
         mv _build/pdf/book.pdf _build/html/portfolio.pdf
+
+    # Build the book
+    - name: Build the book as compelte html
+      run: |
+        jupyter-book build .
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
