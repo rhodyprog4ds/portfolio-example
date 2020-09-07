@@ -1,5 +1,7 @@
 - file: intro
 
+- part: About
+  chapters: about/index
 
 # - part: Submission 1
 #   chapters:
