@@ -26,7 +26,7 @@ _this is designed to be used by accepting an assignment on github classroom, if 
 - if pdf only, change to the `gh-pages` branch, view `portfolio.pdf` and download
 
 
-## Preparing a for Portfolio Checks
+## Preparing for Portfolio Checks
 
 - add files with your contents to the repository, commit all changes directly to the `main` branch
 - edit the appropriate `submission_x_intro.md`
