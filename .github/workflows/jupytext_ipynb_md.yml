@@ -41,15 +41,15 @@ jobs:
 
         # The name of the user that will be displayed as the author of the commit
         # Default: author of the commit that triggered the run
-        author_name: Your Name
+        author_name: Sarah Brown
 
         # The email of the user that will be displayed as the author of the commit
         # Default: author of the commit that triggered the run
-        author_email: mail@example.com
+        author_email: brownsarahm@uri.edu
 
         # The local path to the directory where your repository is located. You should use actions/checkout first to set it up
         # Default: '.'
-        cwd: './path/to/the/repo'
+        cwd: '.'
 
         # Whether to use the --force option on `git add`, in order to bypass eventual gitignores
         # Default: false
@@ -61,16 +61,9 @@ jobs:
 
         # The message for the commit
         # Default: 'Commit from GitHub Actions'
-        message: 'Your commit message'
+        message: 'convert notebooks to md'
 
-        # Name of the branch to use, if different from the one that triggered the workflow
-        # Default: the branch that triggered the workflow (from GITHUB_REF)
-        ref: 'someOtherBranch'
-
-        # The arguments for the `git rm` command (see the paragraph below for more info)
-        # Default: ''
-        remove: "./dir/old_file.js"
-
+        
         # Name of the tag to add to the new commit (see the paragraph below for more info)
         # Default: ''
         tag: "v1.0.0"
