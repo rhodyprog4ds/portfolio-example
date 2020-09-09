@@ -33,6 +33,14 @@ You can run Jupyter book offline, but you do not need to. There are some parts o
 
 You can use it by adding files, either markdown files or jupyter notebooks to the folder and pushing or by uploading to the repository.
 
+When you add Jupyter notebooks and push your changes to GitHub, a GitHub Action will convert all of the notebooks to a markdown file and add that to your repository as well. This behaves better with version control and will help us when grading to give you detailed feedback.  
+
+If you are working with git, not by uploading, you'll need to pull this converted file. If you want to convert manually, you may also do that by:
+- removing the jupytext GitHub Action
+- installing jupytext
+- converting your notebooks or authoring in md and using jupyterbook to run them.
+
+
 Optionally, there's a lot of other features. For information on how to use special formatting, see the [Jupyter Book Documentation](https://jupyterbook.org/intro.html) and the example files in the `template_files/` folder of this repository.
 
 
