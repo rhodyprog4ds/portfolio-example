@@ -17,7 +17,9 @@ GitHub Actions are setup for publishing your Jupyter book on GitHub, you can vie
 _If you make your html public, for the semester, please keep it in the `rhodyprog4ds` organization. In December, if you wish you will be able to transfer ownership of your portfolio to your GitHub account to move it from `rhodyprog4ds.github.io/portfolio-username` to `username.github.io/whatever-you-want`._
 
 
-#### You can build locally by:
+#### You can build locally by
+
+You can run Jupyter book offline, but you do not need to. There are some parts of this that are experimental and may be hard to get working on Windows or even Mac, but work on the Linux systems that GitHub hosts.
   - follow the [Jupyter Book Setup Instructions](https://jupyterbook.org/start/overview.html) in order to build offline
   - follow the [Jupyter Book PDF Instructions](https://jupyterbook.org/advanced/pdf.html) in order to build to pdf offline
 
@@ -26,6 +28,12 @@ _If you make your html public, for the semester, please keep it in the `rhodypro
 - edit `_config.yml` to set your name as author
 - edit `about/index.md` to be the introduction of your portfolio and a biography of yourself
 - - change the logo if you wish
+
+## Using your Jupyter Book Portfolio
+
+You can use it by adding files, either markdown files or jupyter notebooks to the folder and pushing or by uploading to the repository.
+
+Optionally, there's a lot of other features. For information on how to use special formatting, see the [Jupyter Book Documentation](https://jupyterbook.org/intro.html) and the example files in the `template_files/` folder of this repository.
 
 
 ## Preparing for Portfolio Checks
