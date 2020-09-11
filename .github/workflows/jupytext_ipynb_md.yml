@@ -31,7 +31,11 @@ jobs:
 
     - name: convert
       run: |
-          jupytext *.ipynb --to myst
+          jupytext about/*.ipynb --to myst
+          jupytext check1/*.ipynb --to myst
+          jupytext check2/*.ipynb --to myst
+          jupytext check3/*.ipynb --to myst
+          jupytext check4/*.ipynb --to myst
 
     - uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
       with:
