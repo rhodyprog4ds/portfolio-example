@@ -70,5 +70,13 @@ compute_grade(14,14,14)
 ```
 
 ```{code-cell} ipython3
+assert compute_grade(14,14,14) == 'C-'
+```
 
+```{code-cell} ipython3
+assert compute_grade(15,15,15) == 'A'
+```
+
+```{code-cell} ipython3
+assert compute_grade(15,15,11) == 'A-'
 ```
