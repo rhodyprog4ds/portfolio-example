@@ -36,7 +36,7 @@ def compute_grade(num_level1,num_level2,num_level3):
         if num_level2 == 15:
             if num_level3 == 15:
                 grade = 'A'
-            elif num_level3 >= 10:
+            elif num_level3 > 10:
                 grade = 'A-'
             elif num_level3 >=5:
                 grade = 'B+'
