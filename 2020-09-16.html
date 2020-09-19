@@ -138,9 +138,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/2020-09-16.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/2020-09-16.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -156,28 +156,6 @@
                     class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/2020-09-16.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <a class="colab-button" href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/2020-09-16.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
-                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
-                    src="_static/images/logo_colab.png"
-                    alt="Interact on Colab">Colab</button></a>
-        
-        
-    </div>
-</div>
 
     </div>
 
@@ -196,958 +174,85 @@
         
               <div>
                 
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>print<span class="o">?</span>
+  <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>print?
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">print</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">print</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on built-in function print in module builtins:
-
-print(...)
-    print(value, ..., sep=&#39; &#39;, end=&#39;\n&#39;, file=sys.stdout, flush=False)
-    
-    Prints the values to a stream, or to sys.stdout by default.
-    Optional keyword arguments:
-    file:  a file-like object (stream); defaults to the current sys.stdout.
-    sep:   string inserted between values, default a space.
-    end:   string appended after the last value, default a newline.
-    flush: whether to forcibly flush the stream.
-</pre></div>
-</div>
-</div>
 </div>
 <div class="section" id="data-in-pandas">
 <h1>Data in Pandas<a class="headerlink" href="#data-in-pandas" title="Permalink to this headline">¶</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/brownsarahm/python-socialsci-files/master/data/SAFI_clean.csv&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/brownsarahm/python-socialsci-files/master/data/SAFI_clean.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>key_ID</th>
-      <th>village</th>
-      <th>interview_date</th>
-      <th>no_membrs</th>
-      <th>years_liv</th>
-      <th>respondent_wall_type</th>
-      <th>rooms</th>
-      <th>memb_assoc</th>
-      <th>affect_conflicts</th>
-      <th>liv_count</th>
-      <th>items_owned</th>
-      <th>no_meals</th>
-      <th>months_lack_food</th>
-      <th>instanceID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>3</td>
-      <td>4</td>
-      <td>muddaub</td>
-      <td>1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1</td>
-      <td>bicycle;television;solar_panel;table</td>
-      <td>2</td>
-      <td>Jan</td>
-      <td>uuid:ec241f2c-0609-46ed-b5e8-fe575f6cefef</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>7</td>
-      <td>9</td>
-      <td>muddaub</td>
-      <td>1</td>
-      <td>yes</td>
-      <td>once</td>
-      <td>3</td>
-      <td>cow_cart;bicycle;radio;cow_plough;solar_panel;...</td>
-      <td>2</td>
-      <td>Jan;Sept;Oct;Nov;Dec</td>
-      <td>uuid:099de9c9-3e5e-427b-8452-26250e840d6e</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>10</td>
-      <td>15</td>
-      <td>burntbricks</td>
-      <td>1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1</td>
-      <td>solar_torch</td>
-      <td>2</td>
-      <td>Jan;Feb;Mar;Oct;Nov;Dec</td>
-      <td>uuid:193d7daf-9582-409b-bf09-027dd36f9007</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>7</td>
-      <td>6</td>
-      <td>burntbricks</td>
-      <td>1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2</td>
-      <td>bicycle;radio;cow_plough;solar_panel;mobile_phone</td>
-      <td>2</td>
-      <td>Sept;Oct;Nov;Dec</td>
-      <td>uuid:148d1105-778a-4755-aa71-281eadd4a973</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>7</td>
-      <td>40</td>
-      <td>burntbricks</td>
-      <td>1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4</td>
-      <td>motorcyle;radio;cow_plough;mobile_phone</td>
-      <td>2</td>
-      <td>Aug;Sept;Oct;Nov</td>
-      <td>uuid:2c867811-9696-4966-9866-f35c3e97d02d</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>126</th>
-      <td>126</td>
-      <td>Ruaca</td>
-      <td>2017-05-18T00:00:00Z</td>
-      <td>3</td>
-      <td>7</td>
-      <td>burntbricks</td>
-      <td>1</td>
-      <td>no</td>
-      <td>more_once</td>
-      <td>3</td>
-      <td>motorcyle;radio;solar_panel</td>
-      <td>3</td>
-      <td>Oct;Nov;Dec</td>
-      <td>uuid:69caea81-a4e5-4e8d-83cd-9c18d8e8d965</td>
-    </tr>
-    <tr>
-      <th>127</th>
-      <td>193</td>
-      <td>Ruaca</td>
-      <td>2017-06-04T00:00:00Z</td>
-      <td>7</td>
-      <td>10</td>
-      <td>cement</td>
-      <td>3</td>
-      <td>no</td>
-      <td>more_once</td>
-      <td>3</td>
-      <td>car;lorry;television;radio;sterio;cow_plough;s...</td>
-      <td>3</td>
-      <td>none</td>
-      <td>uuid:5ccc2e5a-ea90-48b5-8542-69400d5334df</td>
-    </tr>
-    <tr>
-      <th>128</th>
-      <td>194</td>
-      <td>Ruaca</td>
-      <td>2017-06-04T00:00:00Z</td>
-      <td>4</td>
-      <td>5</td>
-      <td>muddaub</td>
-      <td>1</td>
-      <td>no</td>
-      <td>more_once</td>
-      <td>1</td>
-      <td>radio;solar_panel;solar_torch;mobile_phone</td>
-      <td>3</td>
-      <td>Sept;Oct;Nov</td>
-      <td>uuid:95c11a30-d44f-40c4-8ea8-ec34fca6bbbf</td>
-    </tr>
-    <tr>
-      <th>129</th>
-      <td>199</td>
-      <td>Chirodzo</td>
-      <td>2017-06-04T00:00:00Z</td>
-      <td>7</td>
-      <td>17</td>
-      <td>burntbricks</td>
-      <td>2</td>
-      <td>yes</td>
-      <td>more_once</td>
-      <td>2</td>
-      <td>cow_cart;lorry;motorcyle;computer;television;r...</td>
-      <td>3</td>
-      <td>Nov;Dec</td>
-      <td>uuid:ffc83162-ff24-4a87-8709-eff17abc0b3b</td>
-    </tr>
-    <tr>
-      <th>130</th>
-      <td>200</td>
-      <td>Chirodzo</td>
-      <td>2017-06-04T00:00:00Z</td>
-      <td>8</td>
-      <td>20</td>
-      <td>burntbricks</td>
-      <td>2</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>3</td>
-      <td>radio;cow_plough;solar_panel;solar_torch;table...</td>
-      <td>3</td>
-      <td>Oct;Nov</td>
-      <td>uuid:aa77a0d7-7142-41c8-b494-483a5b68d8a7</td>
-    </tr>
-  </tbody>
-</table>
-<p>131 rows × 14 columns</p>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/brownsarahm/python-socialsci-files/master/data/SAFI_clean.csv&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/brownsarahm/python-socialsci-files/master/data/SAFI_clean.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">safi_df</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">safi_df</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pandas.core.frame.DataFrame
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">shape</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(131, 14)
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">shape</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(131, 14)
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>safi_df.head?
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>key_ID</th>
-      <th>village</th>
-      <th>interview_date</th>
-      <th>no_membrs</th>
-      <th>years_liv</th>
-      <th>respondent_wall_type</th>
-      <th>rooms</th>
-      <th>memb_assoc</th>
-      <th>affect_conflicts</th>
-      <th>liv_count</th>
-      <th>items_owned</th>
-      <th>no_meals</th>
-      <th>months_lack_food</th>
-      <th>instanceID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>3</td>
-      <td>4</td>
-      <td>muddaub</td>
-      <td>1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1</td>
-      <td>bicycle;television;solar_panel;table</td>
-      <td>2</td>
-      <td>Jan</td>
-      <td>uuid:ec241f2c-0609-46ed-b5e8-fe575f6cefef</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>7</td>
-      <td>9</td>
-      <td>muddaub</td>
-      <td>1</td>
-      <td>yes</td>
-      <td>once</td>
-      <td>3</td>
-      <td>cow_cart;bicycle;radio;cow_plough;solar_panel;...</td>
-      <td>2</td>
-      <td>Jan;Sept;Oct;Nov;Dec</td>
-      <td>uuid:099de9c9-3e5e-427b-8452-26250e840d6e</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>10</td>
-      <td>15</td>
-      <td>burntbricks</td>
-      <td>1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1</td>
-      <td>solar_torch</td>
-      <td>2</td>
-      <td>Jan;Feb;Mar;Oct;Nov;Dec</td>
-      <td>uuid:193d7daf-9582-409b-bf09-027dd36f9007</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>7</td>
-      <td>6</td>
-      <td>burntbricks</td>
-      <td>1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2</td>
-      <td>bicycle;radio;cow_plough;solar_panel;mobile_phone</td>
-      <td>2</td>
-      <td>Sept;Oct;Nov;Dec</td>
-      <td>uuid:148d1105-778a-4755-aa71-281eadd4a973</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>7</td>
-      <td>40</td>
-      <td>burntbricks</td>
-      <td>1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4</td>
-      <td>motorcyle;radio;cow_plough;mobile_phone</td>
-      <td>2</td>
-      <td>Aug;Sept;Oct;Nov</td>
-      <td>uuid:2c867811-9696-4966-9866-f35c3e97d02d</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>key_ID</th>
-      <th>village</th>
-      <th>interview_date</th>
-      <th>no_membrs</th>
-      <th>years_liv</th>
-      <th>respondent_wall_type</th>
-      <th>rooms</th>
-      <th>memb_assoc</th>
-      <th>affect_conflicts</th>
-      <th>liv_count</th>
-      <th>items_owned</th>
-      <th>no_meals</th>
-      <th>months_lack_food</th>
-      <th>instanceID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>3</td>
-      <td>4</td>
-      <td>muddaub</td>
-      <td>1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1</td>
-      <td>bicycle;television;solar_panel;table</td>
-      <td>2</td>
-      <td>Jan</td>
-      <td>uuid:ec241f2c-0609-46ed-b5e8-fe575f6cefef</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>7</td>
-      <td>9</td>
-      <td>muddaub</td>
-      <td>1</td>
-      <td>yes</td>
-      <td>once</td>
-      <td>3</td>
-      <td>cow_cart;bicycle;radio;cow_plough;solar_panel;...</td>
-      <td>2</td>
-      <td>Jan;Sept;Oct;Nov;Dec</td>
-      <td>uuid:099de9c9-3e5e-427b-8452-26250e840d6e</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>10</td>
-      <td>15</td>
-      <td>burntbricks</td>
-      <td>1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1</td>
-      <td>solar_torch</td>
-      <td>2</td>
-      <td>Jan;Feb;Mar;Oct;Nov;Dec</td>
-      <td>uuid:193d7daf-9582-409b-bf09-027dd36f9007</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>safi_df.head<span class="o">?</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="p">[</span><span class="s1">&#39;interview_date&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>key_ID</th>
-      <th>village</th>
-      <th>interview_date</th>
-      <th>no_membrs</th>
-      <th>years_liv</th>
-      <th>respondent_wall_type</th>
-      <th>rooms</th>
-      <th>memb_assoc</th>
-      <th>affect_conflicts</th>
-      <th>liv_count</th>
-      <th>items_owned</th>
-      <th>no_meals</th>
-      <th>months_lack_food</th>
-      <th>instanceID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>126</th>
-      <td>126</td>
-      <td>Ruaca</td>
-      <td>2017-05-18T00:00:00Z</td>
-      <td>3</td>
-      <td>7</td>
-      <td>burntbricks</td>
-      <td>1</td>
-      <td>no</td>
-      <td>more_once</td>
-      <td>3</td>
-      <td>motorcyle;radio;solar_panel</td>
-      <td>3</td>
-      <td>Oct;Nov;Dec</td>
-      <td>uuid:69caea81-a4e5-4e8d-83cd-9c18d8e8d965</td>
-    </tr>
-    <tr>
-      <th>127</th>
-      <td>193</td>
-      <td>Ruaca</td>
-      <td>2017-06-04T00:00:00Z</td>
-      <td>7</td>
-      <td>10</td>
-      <td>cement</td>
-      <td>3</td>
-      <td>no</td>
-      <td>more_once</td>
-      <td>3</td>
-      <td>car;lorry;television;radio;sterio;cow_plough;s...</td>
-      <td>3</td>
-      <td>none</td>
-      <td>uuid:5ccc2e5a-ea90-48b5-8542-69400d5334df</td>
-    </tr>
-    <tr>
-      <th>128</th>
-      <td>194</td>
-      <td>Ruaca</td>
-      <td>2017-06-04T00:00:00Z</td>
-      <td>4</td>
-      <td>5</td>
-      <td>muddaub</td>
-      <td>1</td>
-      <td>no</td>
-      <td>more_once</td>
-      <td>1</td>
-      <td>radio;solar_panel;solar_torch;mobile_phone</td>
-      <td>3</td>
-      <td>Sept;Oct;Nov</td>
-      <td>uuid:95c11a30-d44f-40c4-8ea8-ec34fca6bbbf</td>
-    </tr>
-    <tr>
-      <th>129</th>
-      <td>199</td>
-      <td>Chirodzo</td>
-      <td>2017-06-04T00:00:00Z</td>
-      <td>7</td>
-      <td>17</td>
-      <td>burntbricks</td>
-      <td>2</td>
-      <td>yes</td>
-      <td>more_once</td>
-      <td>2</td>
-      <td>cow_cart;lorry;motorcyle;computer;television;r...</td>
-      <td>3</td>
-      <td>Nov;Dec</td>
-      <td>uuid:ffc83162-ff24-4a87-8709-eff17abc0b3b</td>
-    </tr>
-    <tr>
-      <th>130</th>
-      <td>200</td>
-      <td>Chirodzo</td>
-      <td>2017-06-04T00:00:00Z</td>
-      <td>8</td>
-      <td>20</td>
-      <td>burntbricks</td>
-      <td>2</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>3</td>
-      <td>radio;cow_plough;solar_panel;solar_torch;table...</td>
-      <td>3</td>
-      <td>Oct;Nov</td>
-      <td>uuid:aa77a0d7-7142-41c8-b494-483a5b68d8a7</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">columns</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">columns</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;key_ID&#39;, &#39;village&#39;, &#39;interview_date&#39;, &#39;no_membrs&#39;, &#39;years_liv&#39;,
-       &#39;respondent_wall_type&#39;, &#39;rooms&#39;, &#39;memb_assoc&#39;, &#39;affect_conflicts&#39;,
-       &#39;liv_count&#39;, &#39;items_owned&#39;, &#39;no_meals&#39;, &#39;months_lack_food&#39;,
-       &#39;instanceID&#39;],
-      dtype=&#39;object&#39;)
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">columns</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;interview_date&#39;
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="p">[</span><span class="s1">&#39;interview_date&#39;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">dtypes</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      2016-11-17T00:00:00Z
-1      2016-11-17T00:00:00Z
-2      2016-11-17T00:00:00Z
-3      2016-11-17T00:00:00Z
-4      2016-11-17T00:00:00Z
-               ...         
-126    2017-05-18T00:00:00Z
-127    2017-06-04T00:00:00Z
-128    2017-06-04T00:00:00Z
-129    2017-06-04T00:00:00Z
-130    2017-06-04T00:00:00Z
-Name: interview_date, Length: 131, dtype: object
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">columns</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">safi_df</span><span class="p">[</span><span class="s1">&#39;village&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">17</span><span class="o">-</span><span class="n">bd02c7e8a4a6</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">safi_df</span><span class="o">.</span><span class="n">columns</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="ne">TypeError</span>: &#39;Index&#39; object is not callable
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="p">[</span><span class="s1">&#39;village&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">columns</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="p">[</span><span class="s1">&#39;respondent_wall_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">23</span><span class="o">-</span><span class="mi">838070</span><span class="n">bb43c5</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">columns</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="ne">TypeError</span>: &#39;pandas._libs.properties.AxisProperty&#39; object is not callable
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pandas.core.frame.DataFrame
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>type
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">dtypes</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>key_ID                   int64
-village                 object
-interview_date          object
-no_membrs                int64
-years_liv                int64
-respondent_wall_type    object
-rooms                    int64
-memb_assoc              object
-affect_conflicts        object
-liv_count                int64
-items_owned             object
-no_meals                 int64
-months_lack_food        object
-instanceID              object
-dtype: object
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>key_ID</th>
-      <th>village</th>
-      <th>interview_date</th>
-      <th>no_membrs</th>
-      <th>years_liv</th>
-      <th>respondent_wall_type</th>
-      <th>rooms</th>
-      <th>memb_assoc</th>
-      <th>affect_conflicts</th>
-      <th>liv_count</th>
-      <th>items_owned</th>
-      <th>no_meals</th>
-      <th>months_lack_food</th>
-      <th>instanceID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>3</td>
-      <td>4</td>
-      <td>muddaub</td>
-      <td>1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1</td>
-      <td>bicycle;television;solar_panel;table</td>
-      <td>2</td>
-      <td>Jan</td>
-      <td>uuid:ec241f2c-0609-46ed-b5e8-fe575f6cefef</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>God</td>
-      <td>2016-11-17T00:00:00Z</td>
-      <td>7</td>
-      <td>9</td>
-      <td>muddaub</td>
-      <td>1</td>
-      <td>yes</td>
-      <td>once</td>
-      <td>3</td>
-      <td>cow_cart;bicycle;radio;cow_plough;solar_panel;...</td>
-      <td>2</td>
-      <td>Jan;Sept;Oct;Nov;Dec</td>
-      <td>uuid:099de9c9-3e5e-427b-8452-26250e840d6e</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">safi_df</span><span class="p">[</span><span class="s1">&#39;village&#39;</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;God&#39;, &#39;Chirodzo&#39;, &#39;Ruaca&#39;], dtype=object)
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="p">[</span><span class="s1">&#39;village&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ruaca       49
-God         43
-Chirodzo    39
-Name: village, dtype: int64
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">safi_df</span><span class="p">[</span><span class="s1">&#39;respondent_wall_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>burntbricks     65
-muddaub         45
-sunbricks       17
- burntbricks     2
- muddaub         1
-cement           1
-Name: respondent_wall_type, dtype: int64
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 

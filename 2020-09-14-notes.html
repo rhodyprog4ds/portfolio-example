@@ -138,9 +138,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/2020-09-14-notes.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/2020-09-14-notes.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -156,28 +156,6 @@
                     class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/2020-09-14-notes.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <a class="colab-button" href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/2020-09-14-notes.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
-                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
-                    src="_static/images/logo_colab.png"
-                    alt="Interact on Colab">Colab</button></a>
-        
-        
-    </div>
-</div>
 
     </div>
 
@@ -198,546 +176,63 @@
                 
   <div class="section" id="iterables">
 <h1>Iterables<a class="headerlink" href="#iterables" title="Permalink to this headline">¶</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;sarah&#39;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;sarah&#39;</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;a&#39;
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;h&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">name</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">name</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">char</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sss
-aaa
-rrr
-aaa
-hhh
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sarah&#39;</span><span class="p">,</span> <span class="s1">&#39;Jose&#39;</span><span class="p">,</span> <span class="s1">&#39;Cam&#39;</span><span class="p">,</span> <span class="s1">&#39;Bri&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sarah&#39;</span><span class="p">,</span> <span class="s1">&#39;Jose&#39;</span><span class="p">,</span> <span class="s1">&#39;Cam&#39;</span><span class="p">,</span> <span class="s1">&#39;Bri&#39;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;hello&#39;</span> <span class="o">+</span> <span class="n">n</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">names</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;hello&#39;</span> <span class="o">+</span> <span class="n">n</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">names</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">greetings</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hello &#39;</span> <span class="o">+</span> <span class="n">n</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">names</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;hellosarah&#39;, &#39;helloJose&#39;, &#39;helloCam&#39;, &#39;helloBri&#39;]
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">greetings</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">greetings</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hello &#39;</span> <span class="o">+</span> <span class="n">n</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">names</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">greetings</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;hello sarah&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gh_names</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;brownsarahm&#39;</span><span class="p">:</span><span class="s1">&#39;Sarah Brown&#39;</span><span class="p">,</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">gh_names</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;brownsarahm&#39;</span><span class="p">:</span><span class="s1">&#39;Sarah Brown&#39;</span><span class="p">,</span>
             <span class="s1">&#39;briannakathrynm1&#39;</span> <span class="p">:</span> <span class="s1">&#39;Brianna MacDonald&#39;</span><span class="p">,</span>
             <span class="s1">&#39;jdion62&#39;</span><span class="p">:</span><span class="s1">&#39;Jacob Dion&#39;</span><span class="p">}</span>
 <span class="n">gh_names</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;brownsarahm&#39;: &#39;Sarah Brown&#39;,
- &#39;briannakathrynm1&#39;: &#39;Brianna MacDonald&#39;,
- &#39;jdion62&#39;: &#39;Jacob Dion&#39;}
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">gh_names</span><span class="p">[</span><span class="s1">&#39;jdion62&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gh_names</span><span class="p">[</span><span class="s1">&#39;jdion62&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Jacob Dion&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">gh_names</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">gh_names</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;&#39;s username is &quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sarah Brown &#39;s username is  brownsarahm
-Brianna MacDonald &#39;s username is  briannakathrynm1
-Jacob Dion &#39;s username is  jdion62
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">gh_names</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">gh_names</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>brownsarahm
-briannakathrynm1
-jdion62
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">14</span><span class="o">-</span><span class="mi">374</span><span class="n">a1a6f9f7e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">()</span>
-
-<span class="ne">TypeError</span>: read_csv() missing 1 required positional argument: &#39;filepath_or_buffer&#39;
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="s1">&#39;https://rhodyprog4ds.github.io/BrownFall20/syllabus/course_map.html&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="s1">&#39;https://rhodyprog4ds.github.io/BrownFall20/syllabus/course_map.html&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[   Unnamed: 0_level_0                                             topics  \
-                  week                                 Unnamed: 1_level_1   
- 0                   1                             [admin, python review]   
- 1                   2                        Loading data, Python review   
- 2                   3                          Exploratory Data Analysis   
- 3                   4                                      Data Cleaning   
- 4                   5                      Databases, Merging DataFrames   
- 5                   6  Modeling, Naive Bayes, classification performa...   
- 6                   7                   decision trees, cross validation   
- 7                   8                                         Regression   
- 8                   9                                         Clustering   
- 9                  10                              SVM, parameter tuning   
- 10                 11                              KNN, Model comparison   
- 11                 12                                      Text Analysis   
- 12                 13                                     Topic Modeling   
- 13                 14                                      Deep Learning   
- 
-                              skills  
-                  Unnamed: 2_level_1  
- 0                           process  
- 1      [access, prepare, summarize]  
- 2            [summarize, visualize]  
- 3   [prepare, summarize, visualize]  
- 4    [access, construct, summarize]  
- 5        [classification, evaluate]  
- 6        [classification, evaluate]  
- 7            [regression, evaluate]  
- 8            [clustering, evaluate]  
- 9                 [optimize, tools]  
- 10                 [compare, tools]  
- 11                   [unstructured]  
- 12            [unstructured, tools]  
- 13                 [tools, compare]  ,
-    Unnamed: 0_level_0                                              skill  \
-               keyword                                 Unnamed: 1_level_1   
- 0              python                              pythonic code writing   
- 1             process                 describe data science as a process   
- 2              access                    access data in multiple formats   
- 3           construct           construct datasets from multiple sources   
- 4           summarize                        Summarize and describe data   
- 5           visualize                                     Visualize data   
- 6             prepare                          prepare data for analysis   
- 7      classification                               Apply classification   
- 8          regression                                   Apply Regression   
- 9          clustering                                         Clustering   
- 10           evaluate                         Evaluate model performance   
- 11           optimize                          Optimize model parameters   
- 12            compare                                     compare models   
- 13       unstructured                            model unstructured data   
- 14              tools  use industry standard data science tools and w...   
- 
-                                               Level 1  \
-                                    Unnamed: 2_level_1   
- 0   python code that mostly runs, occasional pep8 ...   
- 1           Identify basic components of data science   
- 2   load data from at least one format; identify t...   
- 3   identify what should happen to merge datasets ...   
- 4   Describe the shape and structure of a dataset ...   
- 5   identify plot types, generate basic plots from...   
- 6   identify if data is or is not ready for analys...   
- 7   identify and describe what classification is, ...   
- 8   identify what data that can be used for regres...   
- 9                         describe what clustering is   
- 10  Explain basic performance metrics for differen...   
- 11  Identify when model parameters need to be opti...   
- 12                Qualitatively compare model classes   
- 13  Identify options for representing text data an...   
- 14  Solve well strucutred problems with a single t...   
- 
-                                               Level 2  \
-                                    Unnamed: 3_level_1   
- 0   python code that reliably runs, frequent pep8 ...   
- 1   Describe and define each stge of the data scie...   
- 2   Load data for processing from the most common ...   
- 3                                  apply basic merges   
- 4       compute summary statistics of a whole dataset   
- 5   generate multiple plot types with complete lab...   
- 6   apply data reshaping, cleaning, and filtering ...   
- 7   fit preselected classification model to a dataset   
- 8                    can fit linear regression models   
- 9                              apply basic clustering   
- 10  Apply basic model evaluation metrics to a held...   
- 11  Manually optimize basic model parameters such ...   
- 12  Compare model classes in specific terms and fi...   
- 13  Apply at least one representation to transform...   
- 14  Solve semi-strucutred, completely specified pr...   
- 
-                                               Level 3  
-                                    Unnamed: 4_level_1  
- 0   reliable, efficient, pythonic code that consis...  
- 1   Compare different ways that data science can o...  
- 2   access data from both common and uncommon form...  
- 3        merge data that is not automatically aligned  
- 4       Compute summary statistics of subsets of data  
- 5   generate complex plots with pandas and plottin...  
- 6   apply data reshaping, cleaning, and filtering ...  
- 7   fit and apply classification models and select...  
- 8            can fit and explain nonlinear regression  
- 9   apply multiple clustering techniques, and inte...  
- 10  Evaluate a model with multiple metrics and cro...  
- 11  Select optimal parameters based of mutiple qua...  
- 12  Evaluate tradeoffs between different model com...  
- 13  apply mulitple representations and compare and...  
- 14  Scope, choose an appropriate tool pipeline and...  ,
-    Unnamed: 0_level_0                 A1                 A2  \
-               keyword Unnamed: 1_level_1 Unnamed: 2_level_1   
- 0              python                  1                  1   
- 1             process                  1                  1   
- 2              access                  0                  1   
- 3           construct                  0                  0   
- 4           summarize                  0                  0   
- 5           visualize                  0                  0   
- 6             prepare                  0                  0   
- 7      classification                  0                  0   
- 8          regression                  0                  0   
- 9          clustering                  0                  0   
- 10           evaluate                  0                  0   
- 11           optimize                  0                  0   
- 12            compare                  0                  0   
- 13       unstructured                  0                  0   
- 14              tools                  0                  0   
- 
-                    A3                 A4                 A5  \
-    Unnamed: 3_level_1 Unnamed: 4_level_1 Unnamed: 5_level_1   
- 0                   1                  1                  0   
- 1                   0                  0                  0   
- 2                   1                  1                  0   
- 3                   0                  0                  1   
- 4                   1                  1                  1   
- 5                   1                  0                  0   
- 6                   0                  1                  1   
- 7                   0                  0                  0   
- 8                   0                  0                  0   
- 9                   0                  0                  0   
- 10                  0                  0                  0   
- 11                  0                  0                  0   
- 12                  0                  0                  0   
- 13                  0                  0                  0   
- 14                  0                  0                  0   
- 
-                    A6                 A7                 A8  \
-    Unnamed: 6_level_1 Unnamed: 7_level_1 Unnamed: 8_level_1   
- 0                   0                  0                  0   
- 1                   0                  0                  0   
- 2                   0                  0                  0   
- 3                   1                  0                  0   
- 4                   1                  1                  1   
- 5                   1                  1                  1   
- 6                   0                  0                  0   
- 7                   1                  1                  0   
- 8                   0                  0                  1   
- 9                   0                  0                  0   
- 10                  0                  0                  0   
- 11                  0                  0                  0   
- 12                  0                  0                  0   
- 13                  0                  0                  0   
- 14                  0                  0                  0   
- 
-                    A9                 A10                 A11  \
-    Unnamed: 9_level_1 Unnamed: 10_level_1 Unnamed: 11_level_1   
- 0                   0                   0                   0   
- 1                   0                   0                   0   
- 2                   0                   0                   0   
- 3                   0                   0                   0   
- 4                   1                   1                   1   
- 5                   1                   1                   1   
- 6                   0                   0                   0   
- 7                   0                   1                   0   
- 8                   0                   0                   1   
- 9                   1                   0                   1   
- 10                  0                   1                   1   
- 11                  0                   1                   1   
- 12                  0                   0                   1   
- 13                  0                   0                   0   
- 14                  0                   1                   1   
- 
-                    A12                 A13       # Assignments  
-    Unnamed: 12_level_1 Unnamed: 13_level_1 Unnamed: 14_level_1  
- 0                    0                   0                   4  
- 1                    0                   0                   2  
- 2                    0                   0                   3  
- 3                    0                   0                   2  
- 4                    1                   1                  11  
- 5                    1                   1                   9  
- 6                    0                   0                   2  
- 7                    0                   0                   3  
- 8                    0                   0                   2  
- 9                    0                   0                   2  
- 10                   0                   0                   2  
- 11                   0                   0                   2  
- 12                   0                   1                   2  
- 13                   1                   1                   2  
- 14                   1                   1                   4  ,
-    Unnamed: 0_level_0                                            Level 3  \
-               keyword                                 Unnamed: 1_level_1   
- 0              python  reliable, efficient, pythonic code that consis...   
- 1             process  Compare different ways that data science can o...   
- 2              access  access data from both common and uncommon form...   
- 3           construct       merge data that is not automatically aligned   
- 4           summarize      Compute summary statistics of subsets of data   
- 5           visualize  generate complex plots with pandas and plottin...   
- 6             prepare  apply data reshaping, cleaning, and filtering ...   
- 7      classification  fit and apply classification models and select...   
- 8          regression           can fit and explain nonlinear regression   
- 9          clustering  apply multiple clustering techniques, and inte...   
- 10           evaluate  Evaluate a model with multiple metrics and cro...   
- 11           optimize  Select optimal parameters based of mutiple qua...   
- 12            compare  Evaluate tradeoffs between different model com...   
- 13       unstructured  apply mulitple representations and compare and...   
- 14              tools  Scope, choose an appropriate tool pipeline and...   
- 
-                    P1                 P2                 P3                 P4  
-    Unnamed: 2_level_1 Unnamed: 3_level_1 Unnamed: 4_level_1 Unnamed: 5_level_1  
- 0                   1                  1                  0                  0  
- 1                   0                  1                  1                  0  
- 2                   1                  1                  0                  0  
- 3                   1                  1                  0                  0  
- 4                   1                  1                  0                  0  
- 5                   1                  1                  0                  0  
- 6                   1                  1                  0                  0  
- 7                   0                  1                  1                  0  
- 8                   0                  1                  1                  0  
- 9                   0                  1                  1                  0  
- 10                  0                  1                  1                  0  
- 11                  0                  0                  1                  1  
- 12                  0                  0                  1                  1  
- 13                  0                  0                  1                  1  
- 14                  0                  0                  1                  1  ]
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_list</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="s1">&#39;https://rhodyprog4ds.github.io/BrownFall20/syllabus/course_map.html&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df_list</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="s1">&#39;https://rhodyprog4ds.github.io/BrownFall20/syllabus/course_map.html&#39;</span><span class="p">)</span>
 <span class="n">df_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr>
-      <th></th>
-      <th>Unnamed: 0_level_0</th>
-      <th>topics</th>
-      <th>skills</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>week</th>
-      <th>Unnamed: 1_level_1</th>
-      <th>Unnamed: 2_level_1</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>[admin, python review]</td>
-      <td>process</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>Loading data, Python review</td>
-      <td>[access, prepare, summarize]</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>Exploratory Data Analysis</td>
-      <td>[summarize, visualize]</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>Data Cleaning</td>
-      <td>[prepare, summarize, visualize]</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>Databases, Merging DataFrames</td>
-      <td>[access, construct, summarize]</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>6</td>
-      <td>Modeling, Naive Bayes, classification performa...</td>
-      <td>[classification, evaluate]</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>7</td>
-      <td>decision trees, cross validation</td>
-      <td>[classification, evaluate]</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>8</td>
-      <td>Regression</td>
-      <td>[regression, evaluate]</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>9</td>
-      <td>Clustering</td>
-      <td>[clustering, evaluate]</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>10</td>
-      <td>SVM, parameter tuning</td>
-      <td>[optimize, tools]</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>11</td>
-      <td>KNN, Model comparison</td>
-      <td>[compare, tools]</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>12</td>
-      <td>Text Analysis</td>
-      <td>[unstructured]</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>13</td>
-      <td>Topic Modeling</td>
-      <td>[unstructured, tools]</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>14</td>
-      <td>Deep Learning</td>
-      <td>[tools, compare]</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 <p>Today’s Review:</p>
 <ul class="simple">
@@ -746,6 +241,9 @@ jdion62
 <li><p>dictionaries</p></li>
 <li><p>imported pandas and read data</p></li>
 </ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
