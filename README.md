@@ -7,9 +7,9 @@ To make some of the instructions more concrete I put some (not real) example out
 - you might focus on all level 2
 
 Look at the following files in particular:
-- [submission_1_intro.md](sumbission_1_intro)
+- [submission_1_intro.md](sumbission_1_intro.md)
 - [check1 folder](check1/)
-- [_config.yml](config.yml)
+- [_config.yml](_config.yml)
 - [_toc.yml](_toc.yml)
 
 
