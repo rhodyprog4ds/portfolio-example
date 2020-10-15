@@ -18,8 +18,20 @@ kernelspec:
 ## Correcting Assignment 2
 On assignment 2 I was confused about a thing and did a thing wrong.
 
+First I had a typo
 ```{code-cell} ipython3
-#  code that gave somethign that didn't work
+import panda as pd
+```
+
+Now I know that the correct name is `pandas`
+```{code-cell} ipython3
+import pandas as pd
+```
+
+That cost me a lot of time but I also wrote psuedo code anyway, it wasn't right though since I couldn't see the output
+
+```{code-cell} ipython3
+#  code that ran but produce the wrong output
 ```
 
 this should have been this way instead
