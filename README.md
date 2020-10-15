@@ -1,3 +1,20 @@
+# Example Outline and Notes for CSC/DSP 310 Portfolio
+
+To make some of the instructions more concrete I put some (not real) example outline content in this portfolio. This is not an actual portfolio, I have no actual code, it was just a 15 minute ouline of possible types of content that you might do.  Note that your actual portfolio might look very different:
+
+- you could have more or fewer separate chapters
+- you might focus on all level 3
+- you might focus on all level 2
+
+Look at the following files in particular:
+- [submission_1_intro.md](sumbission_1_intro)
+- [check1 folder](check1/)
+- [_config.yml](config.yml)
+- [_toc.yml](_toc.yml)
+
+
+
+
 # Getting Started
 
 

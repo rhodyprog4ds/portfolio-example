@@ -1,7 +1,11 @@
 # Book settings
-title: CSC 310 Portfolio
-author: Sarah Brown
+title: Professor Brown's Sample Portfolio
+author: Sarah M Brown
 logo: logo.png
 
 
 exclude_patterns            : ['data/*',  README.md, template_files/*]  #
+
+# Execution settings
+execute:
+  allow_errors              : true
